@@ -12,7 +12,8 @@ private String brand;
 @NotEmpty(message = "The category required")
 private String category;
 @Min(0)
-private double price;
+
+private String price;
 @Size(min = 10, message = "the Desciption should be at least 10 characters")
 @Size(max = 10, message = "the Desciption cannot  exceed 100 characters")
 private String description;
@@ -34,10 +35,10 @@ public String getCategory() {
 public void setCategory(String category) {
 	this.category = category;
 }
-public double getPrice() {
+public String getPrice() {
 	return price;
 }
-public void setPrice(double price) {
+public void setPrice(String price) {
 	this.price = price;
 }
 public String getDescription() {
